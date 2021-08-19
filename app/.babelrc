@@ -1,0 +1,19 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "useBuiltIns": "usage",
+                "corejs": {
+                    "version": "3.8",
+                    "proposals": true
+                },
+                "shippedProposals": true
+            }
+        ]
+    ],
+    "plugins": [
+        "@babel/plugin-transform-regenerator",
+        "@babel/plugin-proposal-export-default-from"
+    ]
+}
