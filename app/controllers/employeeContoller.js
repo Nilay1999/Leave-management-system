@@ -214,7 +214,7 @@ export const profile = async (req, res, next) => {
   const { employee } = user;
   let { id } = employee;
 
-  let employeeData = await Employee.findOne({ _id: id })
+  const employeeData = await Employee.findOne({ _id: id })
     .select({ password: 0 })
     .populate('team')
     .populate('role')
